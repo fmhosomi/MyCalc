@@ -48,6 +48,10 @@ class ViewController: UIViewController {
         addText("1")
     }
     
+    @IBAction func tap2Button(_ sender: Any) {
+        addText("2")
+    }
+    
     @IBAction func tapPlusButton(_ sender: Any) {
         addText("+")
     }
