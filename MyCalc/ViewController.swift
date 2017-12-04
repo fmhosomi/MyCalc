@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     
     @IBAction func tapEqualButton(_ sender: Any) {
         let text: String
-        defer {addTextWithNewLine(text)}
+        defer { addTextWithNewLine(text) }
         
         let equations = calcField.text.components(separatedBy: "\n")
         let lastEquation: String = equations.last!
