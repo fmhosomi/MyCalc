@@ -7,12 +7,7 @@
 //
 
 import UIKit
-
-extension String {
-    var expression: NSExpression {
-        return NSExpression(format: self)
-    }
-}
+import MathParser
 
 class ViewController: UIViewController {
 
@@ -35,32 +30,44 @@ class ViewController: UIViewController {
         calcField.setContentOffset(scrollPoint, animated: false)
     }
     
-    func updateText(str: String) {
+    func addText(_ str: String) {
         calcField.isScrollEnabled = false
         calcField.text = calcField.text + str
         scrollToBottom()
     }
     
+    func addTextWithNewLine(_ str: String) {
+        addText("\n\(str)\n")
+    }
+    
     @IBAction func tap0Button(_ sender: Any) {
-        updateText(str: "0")
+        addText("0")
     }
     
     @IBAction func tap1Button(_ sender: Any) {
-        updateText(str: "1")
+        addText("1")
     }
     
     @IBAction func tapPlusButton(_ sender: Any) {
-        updateText(str: "+")
+        addText("+")
     }
     
     @IBAction func tapEqualButton(_ sender: Any) {
+        let text: String
+        defer {addTextWithNewLine(text)}
+        
         let equations = calcField.text.components(separatedBy: "\n")
-        let lastEquation = equations.last!
-
-        guard let result = lastEquation.expression.expressionValue(with: nil, context: nil) as? NSNumber else {
-            updateText(str: "\nError!\n")
+        let lastEquation: String = equations.last!
+        do {
+            let value = try lastEquation.evaluate()
+            
+            // 整数値の表示に .0 がつくのを回避するための処理
+            text = value == floor(value) ? "=\(Int(value))" : "=\(value)"
+        } catch {
+            text = "Invalid Expression!"
             return
         }
+        
     }
 }
 
