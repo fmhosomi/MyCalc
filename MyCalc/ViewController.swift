@@ -131,8 +131,8 @@ class ViewController: UIViewController {
         do {
             let value = try lastEquation.evaluate()
             
-            // 整数値の表示に .0 がつくのを回避するための処理
-            text = value == floor(value) ? "=\(Int(value))" : "=\(value)"
+            // value が整数値 かつ value の絶対値が Int.max より小さい時のみ Int にキャストして .0 がつくのを回避する
+            text = value == floor(value) && fabs(value) < Double(Int.max) ? "=\(Int(value))" : "=\(value)"
         } catch {
             text = "Invalid Expression!"
             return

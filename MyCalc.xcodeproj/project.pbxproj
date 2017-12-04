@@ -38,6 +38,7 @@
 		59458FFD1FC000CE00CB8838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		594590001FC000CE00CB8838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		594590021FC000CE00CB8838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		597B6CF51FD5615000F6C0D4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		B34A8824CAC6272297FCFDD9 /* Pods-MyCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCalc/Pods-MyCalc.release.xcconfig"; sourceTree = "<group>"; };
 		D6B000E3FD800BD4C3F6F7BD /* Pods-MyCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCalc/Pods-MyCalc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +74,7 @@
 		59458FEA1FC000CE00CB8838 = {
 			isa = PBXGroup;
 			children = (
+				597B6CF51FD5615000F6C0D4 /* MyPlayground.playground */,
 				59458FF51FC000CE00CB8838 /* MyCalc */,
 				0D498A331FD540010058E9A4 /* MyCalcUITests */,
 				59458FF41FC000CE00CB8838 /* Products */,
