@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D498A271FD53FDE0058E9A4 /* MyCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D498A261FD53FDE0058E9A4 /* MyCalcTests.swift */; };
+		0D498A351FD540010058E9A4 /* MyCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D498A341FD540010058E9A4 /* MyCalcUITests.swift */; };
 		59458FF71FC000CE00CB8838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59458FF61FC000CE00CB8838 /* AppDelegate.swift */; };
 		59458FF91FC000CE00CB8838 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59458FF81FC000CE00CB8838 /* ViewController.swift */; };
 		59458FFC1FC000CE00CB8838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59458FFA1FC000CE00CB8838 /* Main.storyboard */; };
@@ -15,7 +17,30 @@
 		A4D4354CFE00FFD158D001E1 /* Pods_MyCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A38FB65B0782106DF1E7 /* Pods_MyCalc.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0D498A291FD53FDE0058E9A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59458FEB1FC000CE00CB8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59458FF21FC000CE00CB8838;
+			remoteInfo = MyCalc;
+		};
+		0D498A371FD540010058E9A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59458FEB1FC000CE00CB8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59458FF21FC000CE00CB8838;
+			remoteInfo = MyCalc;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0D498A241FD53FDE0058E9A4 /* MyCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D498A261FD53FDE0058E9A4 /* MyCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalcTests.swift; sourceTree = "<group>"; };
+		0D498A281FD53FDE0058E9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D498A321FD540010058E9A4 /* MyCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D498A341FD540010058E9A4 /* MyCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalcUITests.swift; sourceTree = "<group>"; };
+		0D498A361FD540010058E9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B4A38FB65B0782106DF1E7 /* Pods_MyCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59458FF31FC000CE00CB8838 /* MyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59458FF61FC000CE00CB8838 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +54,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D498A211FD53FDE0058E9A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D498A2F1FD540010058E9A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59458FF01FC000CE00CB8838 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +79,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D498A251FD53FDE0058E9A4 /* MyCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D498A261FD53FDE0058E9A4 /* MyCalcTests.swift */,
+				0D498A281FD53FDE0058E9A4 /* Info.plist */,
+			);
+			path = MyCalcTests;
+			sourceTree = "<group>";
+		};
+		0D498A331FD540010058E9A4 /* MyCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D498A341FD540010058E9A4 /* MyCalcUITests.swift */,
+				0D498A361FD540010058E9A4 /* Info.plist */,
+			);
+			path = MyCalcUITests;
+			sourceTree = "<group>";
+		};
 		59458FEA1FC000CE00CB8838 = {
 			isa = PBXGroup;
 			children = (
 				59458FF51FC000CE00CB8838 /* MyCalc */,
+				0D498A251FD53FDE0058E9A4 /* MyCalcTests */,
+				0D498A331FD540010058E9A4 /* MyCalcUITests */,
 				59458FF41FC000CE00CB8838 /* Products */,
 				DF468E22225DD7AE862069A6 /* Pods */,
 				A45BB8E34E1B760696AEC4E9 /* Frameworks */,
@@ -54,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				59458FF31FC000CE00CB8838 /* MyCalc.app */,
+				0D498A241FD53FDE0058E9A4 /* MyCalcTests.xctest */,
+				0D498A321FD540010058E9A4 /* MyCalcUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +152,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0D498A231FD53FDE0058E9A4 /* MyCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D498A2D1FD53FDE0058E9A4 /* Build configuration list for PBXNativeTarget "MyCalcTests" */;
+			buildPhases = (
+				0D498A201FD53FDE0058E9A4 /* Sources */,
+				0D498A211FD53FDE0058E9A4 /* Frameworks */,
+				0D498A221FD53FDE0058E9A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D498A2A1FD53FDE0058E9A4 /* PBXTargetDependency */,
+			);
+			name = MyCalcTests;
+			productName = MyCalcTests;
+			productReference = 0D498A241FD53FDE0058E9A4 /* MyCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D498A311FD540010058E9A4 /* MyCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D498A391FD540010058E9A4 /* Build configuration list for PBXNativeTarget "MyCalcUITests" */;
+			buildPhases = (
+				0D498A2E1FD540010058E9A4 /* Sources */,
+				0D498A2F1FD540010058E9A4 /* Frameworks */,
+				0D498A301FD540010058E9A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D498A381FD540010058E9A4 /* PBXTargetDependency */,
+			);
+			name = MyCalcUITests;
+			productName = MyCalcUITests;
+			productReference = 0D498A321FD540010058E9A4 /* MyCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		59458FF21FC000CE00CB8838 /* MyCalc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 594590051FC000CE00CB8838 /* Build configuration list for PBXNativeTarget "MyCalc" */;
@@ -121,6 +218,18 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Hosomi Fuminao";
 				TargetAttributes = {
+					0D498A231FD53FDE0058E9A4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BUR5FQ3D77;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59458FF21FC000CE00CB8838;
+					};
+					0D498A311FD540010058E9A4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BUR5FQ3D77;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59458FF21FC000CE00CB8838;
+					};
 					59458FF21FC000CE00CB8838 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 26EZ336896;
@@ -142,11 +251,27 @@
 			projectRoot = "";
 			targets = (
 				59458FF21FC000CE00CB8838 /* MyCalc */,
+				0D498A231FD53FDE0058E9A4 /* MyCalcTests */,
+				0D498A311FD540010058E9A4 /* MyCalcUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0D498A221FD53FDE0058E9A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D498A301FD540010058E9A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59458FF11FC000CE00CB8838 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +339,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D498A201FD53FDE0058E9A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D498A271FD53FDE0058E9A4 /* MyCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D498A2E1FD540010058E9A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D498A351FD540010058E9A4 /* MyCalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59458FEF1FC000CE00CB8838 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,6 +365,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D498A2A1FD53FDE0058E9A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59458FF21FC000CE00CB8838 /* MyCalc */;
+			targetProxy = 0D498A291FD53FDE0058E9A4 /* PBXContainerItemProxy */;
+		};
+		0D498A381FD540010058E9A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59458FF21FC000CE00CB8838 /* MyCalc */;
+			targetProxy = 0D498A371FD540010058E9A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		59458FFA1FC000CE00CB8838 /* Main.storyboard */ = {
@@ -245,6 +399,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0D498A2B1FD53FDE0058E9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BUR5FQ3D77;
+				INFOPLIST_FILE = MyCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sample.oul.MyCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCalc.app/MyCalc";
+			};
+			name = Debug;
+		};
+		0D498A2C1FD53FDE0058E9A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BUR5FQ3D77;
+				INFOPLIST_FILE = MyCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sample.oul.MyCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCalc.app/MyCalc";
+			};
+			name = Release;
+		};
+		0D498A3A1FD540010058E9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BUR5FQ3D77;
+				INFOPLIST_FILE = MyCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sample.oul.MyCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyCalc;
+			};
+			name = Debug;
+		};
+		0D498A3B1FD540010058E9A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BUR5FQ3D77;
+				INFOPLIST_FILE = MyCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sample.oul.MyCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyCalc;
+			};
+			name = Release;
+		};
 		594590031FC000CE00CB8838 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -367,6 +575,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D498A2D1FD53FDE0058E9A4 /* Build configuration list for PBXNativeTarget "MyCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D498A2B1FD53FDE0058E9A4 /* Debug */,
+				0D498A2C1FD53FDE0058E9A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D498A391FD540010058E9A4 /* Build configuration list for PBXNativeTarget "MyCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D498A3A1FD540010058E9A4 /* Debug */,
+				0D498A3B1FD540010058E9A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		59458FEE1FC000CE00CB8838 /* Build configuration list for PBXProject "MyCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -383,6 +607,7 @@
 				594590071FC000CE00CB8838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
