@@ -21,11 +21,28 @@ class ViewControllerUITests: XCTestCase {
         super.tearDown()
     }
 
-    func testTap0Button() {
+    func testTapButtons() {
         let app = XCUIApplication()
         app.buttons["0"].tap()
+        app.buttons["1"].tap()
+        app.buttons["2"].tap()
+        app.buttons["3"].tap()
+        app.buttons["4"].tap()
+        app.buttons["5"].tap()
+        app.buttons["6"].tap()
+        app.buttons["7"].tap()
+        app.buttons["8"].tap()
+        app.buttons["9"].tap()
+        app.buttons["00"].tap()
+        app.buttons["+"].tap()
+        app.buttons["-"].tap()
+        app.buttons["×"].tap()
+        app.buttons["÷"].tap()
         let calcField = app.textViews["calcField"]
-        XCTAssertEqual(calcField.value as! String, "0")
+        XCTAssertEqual(
+            calcField.value as! String,
+            "012345678900+-*/"
+        )
     }
     
 }
